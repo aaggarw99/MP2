@@ -6,14 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/randomizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="random"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="99dp" />
+
     <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
+        android:id="@+id/pokemonSearchBar"
+        android:layout_width="274dp"
         android:layout_height="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.132">
+
+    </SearchView>
+
+    <Button
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="categories"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="207dp" />
+
 </android.support.constraint.ConstraintLayout>
